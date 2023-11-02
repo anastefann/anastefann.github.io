@@ -141,11 +141,13 @@ nav ul li a:hover::after {
   user-select: none;
   border-collapse: collapse;
   width: 90%;
+  max-width: 1600px;
   text-align: center;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+  color:#563522;
 }
 
 .game td:first-child {
@@ -154,9 +156,9 @@ nav ul li a:hover::after {
 }
 
 .game td img:first-child {
-  width: 100%;
+  max-width: 800px;
   padding-top: 5px;
-  padding-left: 5px;
+  margin-left: 0;
 }
 
 .game td:last-child {
@@ -181,6 +183,7 @@ nav ul li a:hover::after {
 }
 
 .game h3 {
+  font-size: 30px;
   letter-spacing: 2px;
   line-height: 0px;
 }
@@ -192,41 +195,38 @@ nav ul li a:hover::after {
   padding: 20px;
 }
 
-.icons {
-  font-size: 15px;
-  margin: 0;
-  padding: 0;
-  margin-top: 20px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 100% !important;
+.gameGenre {
+  font-weight: bold;
 }
 
-.icons td {
-  height: 0px !important;
-  width: 33% !important;
-  vertical-align: middle !important;
-  line-height: 10px;
+.gameResponsibilities {
+  font-weight: bold;
 }
 
-.icons tr {
-  margin: 0;
+.game ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
 }
 
-.icons td .learnMoreButton {
-  margin: 10px;
-  font-size: 20px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  cursor: pointer;
-  background-color: #F99E65;
-  padding: 5px;
-  outline: none;
+.Itch, .learnMore, .steam {
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
   border: none;
+  outline: none;
+  cursor: pointer;
   border-radius: 5px;
-  font-family: Oswald;
+}
+
+.Itch {
+  background-color: rgb(222, 43, 100);
+  color: white;
+}
+
+.steam{
+  outline: 1px solid #563522;
 }
 
 .divider2 {
@@ -250,6 +250,7 @@ nav ul li a:hover::after {
 .carousel-container {
   position: relative;
   width: 50%;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -265,12 +266,12 @@ nav ul li a:hover::after {
   margin: 0 !important;
   height: 100%;
   display: flex;
-  width: 300%;
+  width: 200%;
   transition: all 0.3s;
 }
 
 .slider section {
-  flex-basis: 33.3%;
+  flex-basis: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -299,11 +300,11 @@ nav ul li a:hover::after {
 }
 
 .arrow.left {
-  left: 10px;
+  left: -40px;
 }
 
 .arrow.right {
-  right: 10px;
+  right: -40px;
 }
 
 .carousel-description-container {
@@ -313,14 +314,13 @@ nav ul li a:hover::after {
 }
 
 .carousel-description {
-  height: 100px;
   overflow: hidden;
 }
 
 .slider-description {
   height: 100%;
   display: flex;
-  width: 300%;
+  width: 200%;
   transition: all 0.3s;
 }
 
@@ -330,4 +330,30 @@ nav ul li a:hover::after {
   justify-content: center;
   align-items: center;
   transform: translate(0%); /*change this from 0, -33, -66*/
+}
+
+.otherWork {
+  max-width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #563522; 
+}
+
+.otherWork p  {
+  margin-top: -50px;
+}
+
+.otherWork h3 {
+  margin-top: -20px;
+}
+
+.otherWork ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.otherWork button {
+  margin-top: 20px;
 }
