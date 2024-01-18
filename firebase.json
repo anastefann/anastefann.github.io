@@ -5,6 +5,50 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    
+    "redirects": [
+      {
+        "source": "/Unannounced",
+        "destination": "/Unannounced.html",
+        "type": 301
+      },
+
+      {
+        "source": "/TwinStickJukeBox",
+        "destination": "/TwinStickJukeBox.html",
+        "type": 301
+      },
+
+      {
+        "source": "/Astrohaunt",
+        "destination": "/Astrohaunt.html",
+        "type": 301
+      },
+
+      {
+        "source": "/RuckusAndRascal",
+        "destination": "/RuckusAndRascal.html",
+        "type": 301
+      },
+
+      {
+        "source": "/TheLongDark",
+        "destination": "/TheLongDark.html",
+        "type": 301
+      },
+
+      {
+        "source": "/Unrobbery",
+        "destination": "/Unrobbery.html",
+        "type": 301
+      },
+
+      {
+        "source": "/SilverIsland",
+        "destination": "/SilverIsland.html",
+        "type": 301
+      }
     ]
   }
 }
