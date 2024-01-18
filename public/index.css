@@ -266,7 +266,7 @@ nav ul li a:hover::after {
   margin: 0 !important;
   height: 100%;
   display: flex;
-  width: 200%;
+  width: 300%;
   transition: all 0.3s;
 }
 
@@ -320,12 +320,12 @@ nav ul li a:hover::after {
 .slider-description {
   height: 100%;
   display: flex;
-  width: 200%;
+  width: 300%;
   transition: all 0.3s;
 }
 
 .slider-description section {
-  flex-basis: 100%;
+  flex-basis: 300%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -356,4 +356,29 @@ nav ul li a:hover::after {
 
 .otherWork button {
   margin-top: 20px;
+}
+
+.skills {
+  color:#563522;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skillsTable {
+  width: 100%;
+  list-style-position: inside;
+  font-size: 24px;
+  table-layout: fixed;
+  text-align: center;
+  vertical-align: center;
+}
+
+.skillsTable ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skillsTable td {
+  display: table-cell;
 }
