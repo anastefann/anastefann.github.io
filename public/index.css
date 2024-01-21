@@ -382,3 +382,71 @@ nav ul li a:hover::after {
 .skillsTable td {
   display: table-cell;
 }
+
+.headerTSJ h1, .headerTSJ h3 {
+  margin: 0;
+}
+
+.headerTSJ h1 {
+  font-size: 40px;
+}
+
+.TSJVideo {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  width: 1024px;
+  height: 576px;
+  border: 1px solid gray;
+  background-color: lightgray;
+}
+
+.TSJInformation {
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.TSJInformation p, .TSJInformation li {
+  font-size: 20px;
+  font-weight: lighter;
+  text-decoration: none;
+  list-style: none;
+}
+
+.TSJInformation li {
+  padding-left: none;
+  margin-left: -40px;
+}
+
+.TSJTable table {
+  margin-top: 70px;
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.TSJTable td {
+  border: 1px solid #563522;
+  height: 400px;
+}
+
+.TSJTable td:first-child {
+  width: 60%;
+}
+
+.TSJTable p {
+  font-size: 18px;
+}
+
+.TSJAchievements {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.TSJAchievements span {
+  font-size: 18px;
+}
