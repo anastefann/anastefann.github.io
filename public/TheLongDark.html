@@ -11,15 +11,155 @@
 </head>
 <body>
   <nav>
-    <p>Ana Stefan - Technical Game Designer</p>
+    <a href="index.html" class="navName" style="text-decoration: none;"><p>Ana Stefan - Technical Game Designer</p></a>
     
     <ul>
-      <li><a href="index.html" class="currentPageNav">Home</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">About Me</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn currentPageNav">Projects</a>
+        <div class="dropdown-content">
+          <a href="TwinStickJukeBox.html">Twin Stick Jukebox</a>
+          <a href="Astrohaunt.html">Astrohaunt</a>
+          <a href="RuckusAndRascal.html">Ruckus & Rascal</a>
+          <a href="TheLongDark.html">The Long Dark UI System</a>
+          <a href="Unrobbery.html">Unrobbery</a>
+          <a href="SilverIsland.html">Silver Island</a>
+        </div>
+      </li>
+      <li><a href="AboutMe.html">About Me</a></li>
+      <li><a href="#footer">Contact</a></li>
     </ul>
-  </nav>
+  </nav>  
 
+  <section class="TSJHeader" id="section1">
+    <div class="headerContainer">
+      <div class="TSJHeaderVideo">
+      </div>
+      <div class="headerTSJ">
+        <h1>THE LONG DARK REVERSE ENGINEERED UI SYSTEM</h1>
+        <h3>UI & Technical Game Designer</h3>
+        <div class="TSJVideo">
+          <iframe width="1024" height="576" src="https://www.youtube.com/embed/AsVs4sRYFqw?autoplay=1&loop=1" title="Twin Stick Jukebox Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; vq=hd1080" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <div class="divider">
+      <span class="dividerText">
+        GENERAL GAME INFORMATION
+      </span>
+    </div>
+
+    <section class="TSJInformation">
+
+      <p>This project contains menus and a few modular assets (widgets) that can be used to create main menus. For this project, I replicated The Long Dark's UI as part of a reverse engineering project, but if the assets are replaced, it can easily be used for personal projects as well.
+      </p>
+      <ul>
+        <li>Genre: Modular UI Menu Pack</li>
+        <li>Engine: Unreal Engine 5</li>
+        <li>Team Size: Solo Project</li>
+        <li>Duration: 7 weeks</li>
+        <li>Platform: PC</li>
+      </ul>
+
+    </section>
+
+    <div class="divider">
+      <span class="dividerText">
+        MY RESPONSIBILITIES
+      </span>
+    </div>
+
+    <section class="TSJTopContainer">
+      <div class="TSJContent">
+        <h2>Implemented The Long Dark's UI Menus Into Unreal Engine 5</h2>
+        <p>I made use of Unreal Motion Graphics (UMG) for the UI implementation, having horizontal and vertical boxes to organize the menus seamlessly. Incorporating animations, I showcased the axe on the left side of a button and achieved a smooth fading-in effect upon hovering over it. The Unreal hover events proved particularly valuable in efficiently implementing different descriptions for the buttons. Furthermore, I incorporated sliders for options such as audio and buttons to go between multiple options throughout the settings menus to streamline the process of making selections.</p>
+        <ul>
+          <li>Template</li>
+            <ul>
+              <li>Main Menu</li>
+              <li>Options Menu</li>
+            </ul>
+          <li>Main Menu</li>
+            <ul>
+              <li>Wintermute</li>
+                <ul>
+                  <li>New Save</li>
+                  <li>Load Save</li>
+                </ul>
+              <li>Survival Mode</li>
+                <ul>
+                  <li>New Save</li>
+                  <li>Load Save</li>
+                  <li>Feats</li>
+                </ul>
+              <li>Challenges</li>
+                <ul>
+                  <li>New Challenges</li>
+                  <li>Badges</li>
+                </ul>
+              <li>Extras</li>
+              <li>Options</li>
+                <ul>
+                  <li>Accessibility</li>
+                  <li>Audio</li>
+                  <li>Brightness</li>
+                  <li>Controls</li>
+                  <li>Display</li>
+                  <li>Key Bindings</li>
+                  <li>Privacy</li>
+                  <li>Quality</li>
+                </ul>
+            </ul>
+        </ul>
+      </div>
+    
+      <div class="TSJOverview">
+        <img src="./images/finalpage.png" class="TSJOverview">
+      </div>
+
+    </section>
+
+    <section class="TSJTopContainer">
+
+      <div class="TSJContent">
+        <h2>Create Modular UI Assets</h2>
+        <p>The creation of modular assets was easier than I thought and extremely useful, as I could use these to build the menus without cramming too many elements on one screen. I mainly used text boxes and buttons, and their functionality was created with the help of event dispatchers. In the image here you can see the button</p>
+        <h2>Created Implementation Guidelines Document</h2>
+        <p>How To Document</p>
+        <ul>
+          <li>This document explains all of the project's assets and how to use them for your own. You would of course need to change the visual assets to not be the same as in the game.</li>
+        </ul>
+        <p>Video Tutorial</p>
+        <ul>
+          <li>I created this to showcase some implementation of my system. It goes over what I discuss in the How To Document, but it is easier to follow along for anyone who would be interested in my project.</li>
+        </ul>
+      </div>
+    
+      <div class="TSJOverview">
+        <img src="./images/longdarkfox.png" class="TSJOverview">
+      </div>
+
+    </section>
+
+    <section class="TSJBottomContainer">
+
+      <div class="TSJLeftovers">
+        <h2>Achievements</h2>
+        <p>In navigating the challenges of UI implementation as a beginner, I embraced the learning curve, allowing room for mistakes that ultimately enhanced my understanding. Despite initially planning to recreate various in-game elements, time constraints led to a strategic scope down, focusing solely on the main menus within a limited three-week timeframe. The use of modular assets proved instrumental in efficiently constructing menus, particularly inspired by The Long Dark's consistent design. Early research documentation and a How To Document ensured a comprehensive and organized approach to UI creation, fostering a thoughtful consideration of in-engine elements.</p>
+      </div>
+
+    </section>
+
+    <div class="footer" id="footer">
+      <h2>Get in touch!</h2>
+      <p>Found something interesting? <br/>Send me a message and let's talk about it!</p>
+      <a href="https://www.linkedin.com/in/ana-stefan-a4b648250/" target="_blank"><img src="./images/linkedin.png" alt="LinkedIn" width="60px;"></a>
+      <a href=mailto:"stefananacatalina@gmail.com" target="_blank"><img src="./images/email.png" alt="Email" width="60px;"></a>
+    </div>
+
+    <script src="index.js" defer></script>
+  
 </body>
 </html>

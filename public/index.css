@@ -2,6 +2,7 @@
 
 html {
   font-family: 'Oswald', sans-serif;
+  color: #563522;
 }
 
 body {
@@ -9,6 +10,44 @@ body {
   padding: 0;
   background-color: #F7F6F1;
   min-width: 700px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+  color: #563522;
+  position: relative;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+  display: block;
+}
+
+.dropdown-content {
+  width: 200px;
+  display: none;
+  position: absolute;
+  background-color: #F99E65;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-left: -60px;
+}
+
+.dropdown-content a {
+  color: #563522;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #563522;
+  color: #fff;
 }
 
 nav {
@@ -23,6 +62,7 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 99;
+  font-size: 24px;
 }
 
 nav p {
@@ -51,28 +91,48 @@ nav ul li a {
 	text-decoration: none;
 }
 
+nav ul li a:hover::after {
+	opacity: 0;
+}
+
 .currentPageNav {
   font-weight: bold;
 }
 
-nav ul li a::after {
-	content: '';
-	background-color: #563522;
-	position: absolute;
-	bottom: -18px;
-	left: 0;
-	opacity: 0;
-	height: 2px;
-	width: 100%;
-	transition: transform 0.2s ease;
+nav ul > li > a::after {
+  content: '';
+  background-color: #563522;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  opacity: 0;
+  height: 2px;
+  width: 100%;
+  transition: transform 0.2s ease;
 }
 
-nav ul li a:hover::after {
-	opacity: 1;
-	transform: translateY(-15px);
+nav ul > li > .dropdown:hover > a::after,
+nav ul > li > .dropdown:hover > a:hover::after {
+  opacity: 0;
+}
+
+nav ul > li > a:hover::after {
+  opacity: 1;
+  transform: translateY(-15px);
+}
+
+.navName::after {
+  text-decoration: none;
+  color: #563522;
 }
 
 .headerContainer {
+  user-select: none;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.AMheaderContainer {
   user-select: none;
   text-align: center;
   padding-top: 100px;
@@ -90,6 +150,21 @@ nav ul li a:hover::after {
   vertical-align: top;
   margin-top: 30px;
   margin-left: 50px;
+  margin-right: 100px;
+}
+
+.AMheaderPhoto img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.AMheaderPhoto {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 30px;
+  margin-left: 100px;
   margin-right: 100px;
 }
 
@@ -114,148 +189,147 @@ nav ul li a:hover::after {
 }
 
 .divider {
-  margin-top: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%; 
-  height: 20px; 
-  border-bottom: 3px solid #F99E65; 
-  text-align: center
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    width: 90%; 
+    height: 36px; 
+    border-bottom: 7px solid #F99E65; 
+    text-align: center;
 }
 
 .dividerText {
-  font-size: 30px; 
-  background-color: #F7F6F1;
-  color: #563522; 
-  padding: 0 50px;
+    font-size: 48px; 
+    background-color: #F7F6F1;
+    color: #563522; 
+    padding: 0 50px;
 }
 
-.projectsContent {
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: stretch;
 }
 
-.game {
-  user-select: none;
-  border-collapse: collapse;
-  width: 90%;
-  max-width: 1600px;
-  text-align: center;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  color:#563522;
-}
-
-.game td:first-child {
-  width: 50%;
-  height: 200px;
-}
-
-.game td img:first-child {
-  max-width: 800px;
-  padding-top: 5px;
-  margin-left: 0;
-}
-
-.game td:last-child {
-  width: 50%;
-  background-color: white;
-}
-
-.game h2, .game p {
-  padding: 0;
-  margin: 0;
-  line-height: 40px;
-}
-
-.game h2 {
-  font-size: 40px;
-  letter-spacing: 2px;
-  padding-top: 30px;
-}
-
-.game p {
-  font-size: 14px;
-}
-
-.game h3 {
-  font-size: 30px;
-  letter-spacing: 2px;
-  line-height: 0px;
+.gameImage {
+    max-width: 50%;
+    max-height: 600px;
+    height: auto;
+    flex-shrink: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .gameDescription {
-  font-size: 16px;
-  line-height: 1px;
-  font-weight: 200;
-  padding: 20px;
+    text-align: center;
+    background: white;
+    flex-grow: 1;
+    color:#563522;
+    margin-bottom: 40px;
+    height: 600px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.gameGenre {
+.gameDescription h1 {
+    font-size: 48px;
+    letter-spacing: 4px;
+    line-height: 20px;
+}
+
+.subtitle {
+    font-size: 20px;
+}
+
+.team-role {
+    font-size: 30px;
+    line-height: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.game-genre {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.game-description {
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 0;
+}
+
+.responsibilities-title {
+  font-size: 20px;
+  margin-bottom: 0;
+  letter-spacing: 1px;
   font-weight: bold;
 }
 
-.gameResponsibilities {
-  font-weight: bold;
-}
-
-.game ul {
-  margin-left: 0;
-  padding-left: 0;
+.responsibilities-list li {
+  box-sizing: border-box;
+  font-size: 20px;
   list-style: none;
-}
-
-.Itch, .learnMore, .steam {
-  padding: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.Itch {
-  background-color: rgb(222, 43, 100);
-  color: white;
-}
-
-.steam{
-  outline: 1px solid #563522;
-}
-
-.divider2 {
-  margin-top: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 100px;
-  width: 90%; 
-  height: 20px; 
-  border-bottom: 3px solid #F99E65; 
+  width: 100%;
   text-align: center;
+  display: block;
+  margin-left: -20px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
-.dividerText2 {
-  font-size: 30px; 
-  background-color: #F7F6F1;
-  color: #563522; 
-  padding: 0 50px;
+.buttons {
+    margin-top: auto;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+.buttons a,
+.buttons .learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    height: 50px; 
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.learn-more-button {
+  background-color: #F99E65;
+  border: none;
+  color: #F7F6F1;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.learn-more-button:hover {
+  background-color: #E69562;
+  color: white;
+  transition: all 0.2ms ease;
 }
 
 .carousel-container {
   position: relative;
-  width: 50%;
-  max-width: 900px;
+  width: 60%;
+  max-width: 1200px;
+  min-width: 600px;
   margin: 0 auto;
 }
 
 .carousel {
-  height: 500px;
+  max-height: 700px;
+
+  min-height: 200px;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -279,6 +353,7 @@ nav ul li a:hover::after {
 
 .slider img {
   width: 100%;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .controls .arrow {
@@ -289,12 +364,12 @@ nav ul li a:hover::after {
 }
 
 .controls .arrow i {
-  font-size: 60px;
+  font-size: 80px;
   color: #563522; 
 }
 
 .controls .arrow i:hover {
-  font-size: 60px;
+  font-size: 80px;
   color: #563522; 
   transition: all 0.4 ease;
 }
@@ -340,26 +415,41 @@ nav ul li a:hover::after {
   color: #563522; 
 }
 
+.otherWork h2 {
+  font-size: 48px;
+}
+
 .otherWork p  {
   margin-top: -50px;
+  font-size: 20px;
 }
 
 .otherWork h3 {
   margin-top: -20px;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+.otherWork span {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 .otherWork ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 20px;
 }
 
-.otherWork button {
-  margin-top: 20px;
+.buttons img {
+    height: 50px; /* Set the height of the image to match the buttons */
+    vertical-align: middle; /* Align the image vertically in the middle */
 }
 
 .skills {
-  color:#563522;
+  color: #563522;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -371,7 +461,6 @@ nav ul li a:hover::after {
   font-size: 24px;
   table-layout: fixed;
   text-align: center;
-  vertical-align: center;
 }
 
 .skillsTable ul {
@@ -381,6 +470,7 @@ nav ul li a:hover::after {
 
 .skillsTable td {
   display: table-cell;
+  vertical-align: top; /* Add this line to align content to the top */
 }
 
 .headerTSJ h1, .headerTSJ h3 {
@@ -420,33 +510,210 @@ nav ul li a:hover::after {
   margin-left: -40px;
 }
 
-.TSJTable table {
+.TSJTopContainer {
+  display: flex;
+  flex-direction: row; /* Change to row to display items side by side */
+  align-items: stretch; /* Make items stretch to the same height */
   margin-top: 70px;
-  border-collapse: collapse;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+.TSJBottomContainer {
+  text-align: justify;
+}
+
+.TSJTopContainer h2 {
+  font-size: 30px;
+}
+
+.TSJTopContainer p {
+  font-size: 20px;
+}
+
+.TSJBottomContainer h2 {
+  font-size: 30px;
+}
+
+.TSJBottomContainer p {
+  font-size: 20px;
+}
+
+.TSJContent {
+  flex: 1; /* Allow TSJContent to grow and take equal height */
+  padding-right: 50px;
+}
+
+.TSJOverview {
+  flex: 1; /* Allow TSJOverview to grow and take equal height */
+}
+
+.TSJTopContainer img.TSJOverview {
+  width: 100%; /* Make the image take full width of the TSJOverview container */
+}
+
+.TSJContent h2:not(:first-child) {
+  margin-top: 100px; /* Adjust the margin-top value as needed */
+}
+
+.TSJBottomContainer {
+  display: flex;
+  flex-direction: column; /* Set to column to stack items */
+  align-items: center;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.TSJTable td {
-  border: 1px solid #563522;
-  height: 400px;
+.TSJLeftovers {
+  margin-bottom: 20px;
+  width: 100%;
 }
 
-.TSJTable td:first-child {
+.SilverIslandTopContainer {
+  display: flex;
+  flex-direction: row; /* Change to row to display items side by side */
+  align-items: stretch; /* Make items stretch to the same height */
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 650px;
+  text-align: justify;
+}
+
+.SilverIslandTopContainer h2 {
+  font-size: 30px;
+}
+
+.SilverIslandTopContainer p {
+  font-size: 20px;
+}
+
+.SilverIslandBottomContainer h2 {
+  font-size: 30px;
+}
+
+.SilverIslandBottomContainer p {
+  font-size: 20px;
+}
+
+.SilverIslandTopContainer img.TSJOverview {
+  width: 100%; /* Make the image take full width of the TSJOverview container */
+}
+
+.SilverIslandBottomContainer {
+  text-align: justify;
+}
+
+.TSJTopContainer li {
+  font-size: 20px;
+}
+
+.TSJLeftovers li {
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #E69562;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.footer h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 40px;
+}
+
+.footer p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.AMtextContiner {
   width: 60%;
-}
-
-.TSJTable p {
-  font-size: 18px;
-}
-
-.TSJAchievements {
-  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.TSJAchievements span {
-  font-size: 18px;
+.AMtextContiner h2 {
+  font-size: 60px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.AMtextContiner p {
+  font-size: 22px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .headerPhoto {
+      margin-top: 100px;
+  }
+
+  .container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .gameImage,
+  .gameDescription {
+      max-width: 100%; /* Make the image and description take full width */
+      max-height: none; /* Remove the max-height restriction */
+  }
+
+  .buttons .learn-more-button {
+    font-size: 15px;
+  }
+
+  .TSJTopContainer {
+    flex-direction: column; /* Set to column for smaller screens */
+  }
+
+  .TSJContent {
+    order: 1; /* Change the order to 2 to move it below TSJOverview */
+  }
+
+  .TSJOverview {
+    order: 2; /* Change the order to 1 to move it above TSJContent */
+  }
+
+  .TSJContent h2:not(:first-child) {
+    margin-top: 30px; /* Adjust the margin-top value as needed */
+  }
+
+  .TSJLeftovers {
+    margin-top: 0px;
+    padding: 0;
+  }
+
+  .SilverIslandTopContainer {
+    height: 1000px;
+    flex-direction: column;
+  }
+
+  .TSJVideo {
+    display: none;
+  }
+
 }

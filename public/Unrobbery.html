@@ -11,15 +11,110 @@
 </head>
 <body>
   <nav>
-    <p>Ana Stefan - Technical Game Designer</p>
+    <a href="index.html" class="navName" style="text-decoration: none;"><p>Ana Stefan - Technical Game Designer</p></a>
     
     <ul>
-      <li><a href="index.html" class="currentPageNav">Home</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">About Me</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn currentPageNav">Projects</a>
+        <div class="dropdown-content">
+          <a href="TwinStickJukeBox.html">Twin Stick Jukebox</a>
+          <a href="Astrohaunt.html">Astrohaunt</a>
+          <a href="RuckusAndRascal.html">Ruckus & Rascal</a>
+          <a href="TheLongDark.html">The Long Dark UI System</a>
+          <a href="Unrobbery.html">Unrobbery</a>
+          <a href="SilverIsland.html">Silver Island</a>
+        </div>
+      </li>
+      <li><a href="AboutMe.html">About Me</a></li>
+      <li><a href="#footer">Contact</a></li>
     </ul>
-  </nav>
+  </nav>  
 
+  <section class="TSJHeader" id="section1">
+    <div class="headerContainer">
+      <div class="TSJHeaderVideo">
+      </div>
+      <div class="headerTSJ">
+        <h1>UNROBBERY</h1>
+        <h3>Game Developer</h3>
+        <div class="TSJVideo">
+          <img width="1024" height="576" src="./images/unrobbery.png">
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <div class="divider">
+      <span class="dividerText">
+        GENERAL GAME INFORMATION
+      </span>
+    </div>
+
+    <section class="TSJInformation">
+
+      <p>In "Unrobbery" you play the role of a skilled robber burdened by guilt and driven to make amends. Your mission? To return the stolen items and place them back where they rightfully belong.</p>
+      <ul>
+        <li>Genre: Strategy</li>
+        <li>Engine: Unreal Engine 5</li>
+        <li>Team Size: Team Project, 5 People</li>
+        <li>Duration: 48 Hours</li>
+        <li>Platform: PC</li>
+      </ul>
+
+    </section>
+
+    <div class="divider">
+      <span class="dividerText">
+        MY RESPONSIBILITIES
+      </span>
+    </div>
+
+    <section class="TSJTopContainer">
+      <div class="TSJContent">
+        <h2>Create a Level</h2>
+        <p>I designed a small house which we used for the easier, onboarding level. I blocked it out using basic blocks, set dressed it with asset packs, made sure the lighting is properly set up, and linked other systems with the level so that the game would work as intended.</p>
+        <h2>Add & Update Items to a Data Table</h2>
+        <p>After one of the programmers created the functionality for the items, someone still needed to add them to the data table. I took on this responsibility as it was a time consuming task and I wanted to help the team.</p>
+      </div>
+    
+      <div class="TSJOverview">
+        <img src="./images/level.png" class="TSJOverview">
+      </div>
+
+    </section>
+
+    <section class="TSJTopContainer">
+      <div class="TSJContent">
+        <h2>Add Music & Audio</h2>
+        <p>Using a music pack I found, I carefully selected the best fit for the main menu theme and the in-game theme. For the sounds, I got free assets from the internet. While the music was set to play at the start of a level, the sounds were implemented using PlaySound2D nodes. I also set up sound channels for our project, so I could create an audio settings menu where sound can be adjusted.</p>
+        <h2>Develop the User Interface</h2>
+        <p>I took care of the menus for our game, the main menu, the credits, and the options menu with the audio settings. I used Unreal Motion Graphics (UMG) to set up a simple system for them. The most challenging part was linking the sliders to the audio level in the options menu, for which I used the OnValueChanged event.</p>
+      </div>
+    
+      <div class="TSJOverview">
+        <img src="./images/mainmenu.png" class="TSJOverview">
+      </div>
+
+    </section>
+
+    <section class="TSJBottomContainer">
+
+      <div class="TSJLeftovers">
+        <h2>Developed The Survival Game Mode</h2>
+        <p>I took care of the menus for our game, the main menu, the credits, and the options menu with the audio settings. I used Unreal Motion Graphics (UMG) to set up a simple system for them. The most challenging part was linking the sliders to the audio level in the options menu, for which I used the OnValueChanged event.</p>
+      </div>
+
+  </section>
+
+  <div class="footer" id="footer">
+    <h2>Get in touch!</h2>
+    <p>Found something interesting? <br/>Send me a message and let's talk about it!</p>
+    <a href="https://www.linkedin.com/in/ana-stefan-a4b648250/" target="_blank"><img src="./images/linkedin.png" alt="LinkedIn" width="60px;"></a>
+    <a href=mailto:"stefananacatalina@gmail.com" target="_blank"><img src="./images/email.png" alt="Email" width="60px;"></a>
+  </div>
+
+  <script src="index.js" defer></script>
+  
 </body>
 </html>
