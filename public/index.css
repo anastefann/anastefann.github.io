@@ -153,6 +153,7 @@ nav ul > li > a:hover::after {
   margin-right: 100px;
 }
 
+
 .AMheaderPhoto img {
   width: 400px;
   height: 400px;
@@ -664,6 +665,10 @@ nav ul > li > a:hover::after {
 .AMtextContiner p {
   font-size: 22px;
   text-align: justify;
+}
+
+.resumeImage {
+  width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
