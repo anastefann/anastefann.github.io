@@ -9,8 +9,8 @@
     
     "redirects": [
       {
-        "source": "/Unannounced",
-        "destination": "/Unannounced.html",
+        "source": "/Alice",
+        "destination": "/Alice.html",
         "type": 301
       },
 

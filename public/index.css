@@ -2,7 +2,7 @@
 
 html {
   font-family: 'Oswald', sans-serif;
-  color: #563522;
+  color: #301d55;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 
 /* Style the dropdown button */
 .dropbtn {
-  color: #563522;
+  color: #301d55;
   position: relative;
   text-decoration: none;
 }
@@ -32,26 +32,26 @@ body {
   width: 200px;
   display: none;
   position: absolute;
-  background-color: #F99E65;
+  background-color: #b6b1f0;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   margin-left: -60px;
 }
 
 .dropdown-content a {
-  color: #563522;
+  color: #301d55;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: #563522;
+  background-color: #301d55;
   color: #fff;
 }
 
 nav {
-	background-color: #F99E65;
+	background-color: #b6b1f0;
 	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 	display: flex;
 	align-items: center;
@@ -66,7 +66,7 @@ nav {
 }
 
 nav p {
-	color: #563522;
+	color: #301d55;
 	font-weight: bold;
 	margin: 5px;
 	letter-spacing: 1px;
@@ -86,7 +86,7 @@ nav ul li {
 }
 
 nav ul li a {
-	color: #563522;
+	color: #301d55;
 	position: relative;
 	text-decoration: none;
 }
@@ -101,7 +101,7 @@ nav ul li a:hover::after {
 
 nav ul > li > a::after {
   content: '';
-  background-color: #563522;
+  background-color: #301d55;
   position: absolute;
   bottom: -18px;
   left: 0;
@@ -123,7 +123,7 @@ nav ul > li > a:hover::after {
 
 .navName::after {
   text-decoration: none;
-  color: #563522;
+  color: #301d55;
 }
 
 .headerContainer {
@@ -176,7 +176,7 @@ nav ul > li > a:hover::after {
   height: 220px;
   margin-left: 10px;
   text-align: left;
-  color:#563522;
+  color:#301d55;
   letter-spacing: 1px;
   margin-top: 100px;
 }
@@ -195,15 +195,15 @@ nav ul > li > a:hover::after {
     margin-right: auto;
     margin-bottom: 100px;
     width: 90%; 
-    height: 36px; 
-    border-bottom: 7px solid #F99E65; 
+    height: 27px; 
+    border-bottom: 24px solid #b6b1f0; 
     text-align: center;
 }
 
 .dividerText {
     font-size: 48px; 
     background-color: #F7F6F1;
-    color: #563522; 
+    color: #301d55; 
     padding: 0 50px;
 }
 
@@ -223,11 +223,15 @@ nav ul > li > a:hover::after {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+.gameImage:hover {
+  cursor:pointer;
+}
+
 .gameDescription {
     text-align: center;
     background: white;
     flex-grow: 1;
-    color:#563522;
+    color:#301d55;
     margin-bottom: 40px;
     height: 600px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -306,7 +310,7 @@ nav ul > li > a:hover::after {
 }
 
 .learn-more-button {
-  background-color: #F99E65;
+  background-color: #b6b1f0;
   border: none;
   color: #F7F6F1;
   font-weight: bold;
@@ -314,7 +318,7 @@ nav ul > li > a:hover::after {
 }
 
 .learn-more-button:hover {
-  background-color: #E69562;
+  background-color: #a49fe0;
   color: white;
   transition: all 0.2ms ease;
 }
@@ -366,12 +370,12 @@ nav ul > li > a:hover::after {
 
 .controls .arrow i {
   font-size: 80px;
-  color: #563522; 
+  color: #301d55; 
 }
 
 .controls .arrow i:hover {
   font-size: 80px;
-  color: #563522; 
+  color: #301d55; 
   transition: all 0.4 ease;
 }
 
@@ -413,7 +417,7 @@ nav ul > li > a:hover::after {
   text-align: center;
   margin: 0;
   padding: 0;
-  color: #563522; 
+  color: #301d55; 
 }
 
 .otherWork h2 {
@@ -450,7 +454,7 @@ nav ul > li > a:hover::after {
 }
 
 .skills {
-  color: #563522;
+  color: #301d55;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -617,7 +621,7 @@ nav ul > li > a:hover::after {
 }
 
 .footer {
-  background-color: #E69562;
+  background-color: #b6b1f0;
   padding: 10px;
   bottom: 0;
   width: 100%;
