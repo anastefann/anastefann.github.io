@@ -43,7 +43,7 @@
     <div class="container">
         <img src="./images/Alice.jpg" class="gameImage" onclick="window.location.href='Alice';">
         <div class="gameDescription">
-            <h1>ALICE THROUGH THE FEY REALM</h1>
+            <h1 onclick="window.location.href='Alice';">ALICE THROUGH THE FEY REALM</h1>
             <p class="subtitle">Y3 Team Project @ BUAS (2023-2024)</p>
             <p class="team-role">Technical Game Designer</p>
             <p class="game-genre">Genre: Isometric Narrative Adventure</p>
@@ -67,7 +67,7 @@
     <div class="container">
         <img src="./images/twinstickjukebox.png" class="gameImage" onclick="window.location.href='TwinStickJukeBox';">
         <div class="gameDescription">
-            <h1>TWIN STICK JUKEBOX</h1>
+            <h1 onclick="window.location.href='TwinStickJukeBox';">TWIN STICK JUKEBOX</h1>
             <p class="subtitle">Y2 Solo Project @ BUAS (2022)</p>
             <p class="team-role">Technical Game Designer</p>
             <p class="game-genre">Genre: Twin Stick Shooter</p>
@@ -91,7 +91,7 @@
     <div class="container">
         <img src="./images/astrohaunt.jpg" class="gameImage" onclick="window.location.href='Astrohaunt';">
         <div class="gameDescription">
-            <h1>ASTROHAUNT</h1>
+            <h1 onclick="window.location.href='Astrohaunt';">ASTROHAUNT</h1>
             <p class="subtitle">Y1 Team Project @ BUAS (2021)</p>
             <p class="team-role">Game Designer</p>
             <p class="game-genre">Genre: Top Down Shooter</p>
@@ -114,26 +114,23 @@
     </div>
 
     <div class="container">
-        <img src="./images/ruckusandrascal.png" class="gameImage" onclick="window.location.href='RuckusAndRascal';">
+        <img src="./images/longDark.png" class="gameImage" onclick="window.location.href='TheLongDark';">
         <div class="gameDescription">
-            <h1>RUCKUS & RASCAL</h1>
-            <p class="subtitle">Y1 Team Project @ BUAS (2023)</p>
-            <p class="team-role">Producer</p>
-            <p class="game-genre">Genre: Co-op Adventure</p>
-            <p class="game-description">In this chaotic co-op adventure, you play as 2 mischievous raccoons and take out the head chef of the Deviant's Diner.</p>
+            <h1 onclick="window.location.href='TheLongDark';">THE LONG DARK REVERSE <br/><br/><br/> ENGINEERED UI SYSTEM</h1>
+            <p class="subtitle">Y2 Solo Project @ BUAS (2022)</p>
+            <p class="team-role">UI Designer</p>
             <h2 class="responsibilities-title">My Responsibilities</h2>
             <ul class="responsibilities-list">
-                <li>Set Up and Monitor Scrum & Kanban Boards in Jira</li>
-                <li>Took the role of Scrum Master</li>
-                <li>Helped with Marketing the Game</li>
-                <li>& More</li>
+                <li>Implemented The Long Dark's UI Menus Into Unreal Engine 5</li>
+                <li>Create Modular UI Assets</li>
+                <li>Created Implementation Guidelines Document</li>
             </ul>
-            <br/>
+            <br/><br/><br/>
             <div class="buttons">
-                <a href="https://buas.itch.io/ruckus-rascal" target="_blank">
+                <a href="https://anastefan.itch.io/y2b-the-long-dark-ui" target="_blank">
                     <img src="./images/itch_Logo.png">
                 </a>
-                <button class="learn-more-button" onclick="window.location.href='RuckusAndRascal';">Learn More</button>
+                <button class="learn-more-button" onclick="window.location.href='TheLongDark';">Learn More</button>
             </div>
         </div>
     </div>
@@ -147,9 +144,9 @@
     <div class="carousel-container">
         <div class="carousel">
           <div class="slider">
-            <section><img src="./images/longDark.png" onclick="window.location.href='TheLongDark';"></section>
-            <section><img src="./images/unrobbery.png"></section>
-            <section><img src="./images/silverisland.png"></section>
+            <section><img src="./images/unrobbery.png" onclick="window.location.href='Unrobbery';"></section>
+            <section><img src="./images/ruckusandrascal.png" onclick="window.location.href='RuckusAndRascal';"></section>
+            <section><img src="./images/silverisland.png" onclick="window.location.href='SilverIsland';"></section>
           </div>
           <div class="controls">
             <span class="arrow left"><i class="fa-solid fa-caret-left"></i></span>
@@ -163,47 +160,8 @@
           <div class="slider-description">
             <section>
               <table class="otherWork">
-              <tr>
-                <td><h2>THE LONG DARK REVERSE ENGINEERED UI SYSTEM</h2><br /></td>
-              </tr>
-              <tr>
-                <td><p>Y2 Solo Project @ BUAS (2022-2023)</p></td>
-              </tr>
-              <tr>
-                <td><h3>UI Designer</h3></td>
-              </tr>
-              <tr>
-                <td><span class="gameResponsibilities">My Responsibilities</span></td>
-              </tr>
-              <tr>
-                <td><ul class="otherWorkResp">
-                  <li>
-                    Implemented The Long Dark's UI Menus Into Unreal Engine 5
-                  </li>
-                  <li>
-                    Create Modular UI Assets
-                  </li>
-                  <li>
-                    Created Implementation Guidelines Document
-                  </li>
-                </ul></td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="buttons">
-                    <a href="#" target="_blank">
-                        <img src="./images/itch_Logo.png">
-                    </a>
-                    <button class="learn-more-button" onclick="window.location.href='TheLongDark';">Learn More</button>
-                </div>
-              </tr>
-            </table>
-          </section>
-    
-            <section>
-              <table class="otherWork">
                 <tr>
-                  <td><h2>UNROBBERY</h2><br /></td>
+                  <td><h2 onclick="window.location.href='Unrobbery';">UNROBBERY</h2><br /></td>
                 </tr>
                 <tr>
                   <td><p>GMTK Game Jam (2023)</p></td>
@@ -241,11 +199,50 @@
                 </tr>
               </table>
             </section>
+
+            <section>
+              <table class="otherWork">
+              <tr>
+                <td><h2 onclick="window.location.href='RuckusAndRascal';">RUCKUS & RASCAL</h2><br /></td>
+              </tr>
+              <tr>
+                <td><p>Y2 Team Project @ BUAS (2023)</p></td>
+              </tr>
+              <tr>
+                <td><h3>Producer</h3></td>
+              </tr>
+              <tr>
+                <td><span class="gameResponsibilities">My Responsibilities</span></td>
+              </tr>
+              <tr>
+                <td><ul class="otherWorkResp">
+                  <li>
+                    Set Up and Monitor Scrum & Kanban Boards in Jira
+                  </li>
+                  <li>
+                    Helped with Marketing our Game
+                  </li>
+                  <li>
+                    & More
+                  </li>
+                </ul></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="buttons">
+                    <a href="https://buas.itch.io/ruckus-rascal" target="_blank">
+                        <img src="./images/itch_Logo.png">
+                    </a>
+                    <button class="learn-more-button" onclick="window.location.href='RuckusAndRascal';">Learn More</button>
+                </div>
+              </tr>
+            </table>
+          </section>
     
             <section>
               <table class="otherWork">
               <tr>
-                <td><h2>SILVER ISLAND</h2><br /></td>
+                <td><h2 onclick="window.location.href='SilverIsland';">SILVER ISLAND</h2><br /></td>
               </tr>
               <tr>
                 <td><p>BUAS Intake Project (2021)</p></td>

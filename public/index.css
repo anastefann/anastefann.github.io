@@ -215,6 +215,12 @@ nav ul > li > a:hover::after {
     align-items: stretch;
 }
 
+.container h1:hover {
+  cursor: pointer;
+  letter-spacing: 5px;
+  transition: all 0.2s ease;
+}
+
 .gameImage {
     max-width: 50%;
     max-height: 600px;
@@ -241,6 +247,7 @@ nav ul > li > a:hover::after {
     font-size: 48px;
     letter-spacing: 4px;
     line-height: 20px;
+    transition: all 0.2s ease;
 }
 
 .subtitle {
@@ -361,6 +368,10 @@ nav ul > li > a:hover::after {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
+.slider img:hover {
+  cursor: pointer
+}
+
 .controls .arrow {
   position: absolute;
   top: 50%;
@@ -369,22 +380,22 @@ nav ul > li > a:hover::after {
 }
 
 .controls .arrow i {
-  font-size: 80px;
-  color: #301d55; 
+  font-size: 150px;
+  color: #68639e; 
 }
 
 .controls .arrow i:hover {
-  font-size: 80px;
+  font-size: 150px;
   color: #301d55; 
   transition: all 0.4 ease;
 }
 
 .arrow.left {
-  left: -40px;
+  left: -110px;
 }
 
 .arrow.right {
-  right: -40px;
+  right: -110px;
 }
 
 .carousel-description-container {
@@ -422,6 +433,11 @@ nav ul > li > a:hover::after {
 
 .otherWork h2 {
   font-size: 48px;
+  text-decoration: underline;
+}
+
+.otherWork h2:hover {
+  cursor: pointer;
 }
 
 .otherWork p  {
