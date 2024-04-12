@@ -38,8 +38,11 @@
       </div>
       <div class="headerTSJ">
         <h1>ALICE THROUGH THE FEY REALM</h1>
-        <h3>UI & Technical Game Designer</h3><br/><br/><br/>
+        <h3>UI & Technical Game Designer</h3><br/><br/>
         <span style="font-size: 40px;">~ This Project is currently In Progress ~</span>
+        <div class="TSJVideo">
+          <iframe width="1024" height="576" src="https://cdn.akamai.steamstatic.com/steam/apps/257014377/movie480_vp9.webm?t=1712595395" title="Alice Through the Fey Realm" frameborder="0" autoplay;></iframe>
+        </div>
       </div>
     </div>
     </section>
@@ -57,12 +60,56 @@
       <ul>
         <li>Genre: Narrative Adventure</li>
         <li>Engine: Unreal Engine 5</li>
-        <li>Team Size: Team Project, 16 people (7 designers, 3 programmers, ? artists, 1 producer)</li>
+        <li>Team Size: Team Project, 16 people (7 designers, 3 programmers, 8 artists, 1 producer)</li>
         <li>Duration: 8 Months</li>
         <li>Platform: PC & PS5</li>
       </ul>
 
     </section>
+
+    <div class="divider">
+      <span class="dividerText">
+        MY RESPONSIBILITIES
+      </span>
+    </div>
+
+    <section class="TSJTopContainer">
+      <div class="TSJContent">
+        <h2>Dice Rolling System</h2>
+        <p>The dice rolling system is inspired by Yahtzee but has modifications and both defined and undefined winning conditions. It features items that affect dice rolls to help players meet these conditions. The system includes a dice manager component attached to the game mode blueprint to handle the mini-game, with the dice blueprint managing functions such as rolling, showcasing, etc. The UI allows players to use equipped items that influence dice rolls. The system draws from Disco Elysium's dice rolls but aims to give players more control by incorporating physical dice and item effects for advantages.</p>
+        <h2>Equipment Effects</h2>
+        <p>To give players an advantage against tougher win conditions, we decided to implement effects that would help modify dice values. These varied from increasing a dice's value by 1, rerolling a dice, or even turning one or more dice into a specific number.
+          The implementation was done by associating equipped items from the player's inventory with their effects in the dice blueprint. I created the equipment slots on the right side to showcase the equipped items which can be used once during a dice roll mini-game.
+          This proved to be a great idea for helping players meet some of the tougher conditions, such as 5 of a kind or large street (5 in a row). It also gets them out of situations where they have a roll left and need to make sure they have a number locked in to win.</p>
+      </div>
+    
+      <div class="TSJOverview">
+        <img src="./images/AliceDiceroll.png" class="TSJOverview">
+      </div>
+
+    </section>
+
+    <section class="TSJBottomContainer">
+
+      <div class="TSJLeftovers">
+        <h2>Dice Blueprint</h2>
+        <p>As previously mentioned, the dice blueprint features many functions that control what happens at any point of the mini-game. They start out by getting spawned at a specific location, then they get a small impulse in a random direction so they look more like they are rolling instead of falling. After they finish falling and stop moving, the On Sleep event gets triggered, telling the dice manager to verify if the win condition has been met. Based on this, the players can choose to either lock in specific dice and reroll the remaining ones.</p>
+      </div>
+      
+      <div class="TSJLeftovers">
+        <h2>Dice Rolling UI</h2>
+        <p>The UI features the win conditions, the game state (failed or won), the equipment slots, and the reroll button, alongside other instructions. It is fully controller supported, including the highlighting and selecting of the dice, which we created by linking invisible buttons to each individual dice, creating seamless transitions.
+          The equipment slots take in the information from the player's inventory and adapts it so the players have all the information they need to understand how and when to use an item.
+          The win conditions text is adapted based on which ones were selected by the mission design team. I made sure to display all the information needed for understanding the condition, even for the defined ones. That means that if the set condition is a full house made up of two 5s and three 6s, the text will display exactly that.</p>
+      </div>
+      
+      <div class="TSJLeftovers">
+        <h2>Achievements</h2>
+        <p>This is the main system I worked on for this game, which is one of the most important features. This proved to be a great opportunity for me, but proved to be a an exciting challenge as well. By taking the approach of logical implementation for every win condition and effect, I was able to get creative and quickly prototype any new ideas. However, I encountered many challenges regarding the logical implementation of the win conditions, as there were a few times when they were not getting checked correctly, even after thinking I solved the issue.
+          The great part about working on this feature is that it opened up many playtesting opportunities from which I received interesting improvement points about the win conditions and item effects. I also gained more experience collaborating with artists and programmers on the user interface and the dice rolling system itself.</p>
+      </div>
+
+  </section>
 
     <div class="footer" id="footer">
       <h2>Get in touch!</h2>
