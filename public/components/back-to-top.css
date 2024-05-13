@@ -1,0 +1,73 @@
+.back-to-top-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.back-to-top-button {
+  color: #ffffff;
+  font-size: 22px;
+  align-self: flex-end;
+  font-style: normal;
+  font-family: "Poppins";
+  font-weight: 600;
+  border-width: 0px;
+  margin-right: 0px;
+  background-color: rgb(249, 92, 92);
+}
+
+.back-to-top-root-class-name1 {
+  align-self: center;
+}
+.back-to-top-root-class-name2 {
+  align-self: center;
+}
+.back-to-top-root-class-name3 {
+  align-self: center;
+}
+.back-to-top-root-class-name4 {
+  align-self: center;
+}
+.back-to-top-root-class-name5 {
+  align-self: center;
+}
+.back-to-top-root-class-name6 {
+  align-self: center;
+}
+.back-to-top-root-class-name7 {
+  align-self: center;
+}
+
+
+@media(max-width: 1200px) {
+  .back-to-top-button {
+    font-size: 20px;
+  }
+}
+@media(max-width: 991px) {
+  .back-to-top-button {
+    font-size: 16px;
+  }
+}
+@media(max-width: 767px) {
+  .back-to-top-button {
+    width: auto;
+    font-size: 12px;
+    padding-top: .25rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-bottom: .25rem;
+  }
+}
+@media(max-width: 479px) {
+  .back-to-top-button {
+    width: auto;
+    font-size: 8px;
+    padding-top: .25rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-bottom: .25rem;
+  }
+}
