@@ -76,6 +76,10 @@
 
 
 
+
+
+
+
 @media(max-width: 1600px) {
   .title-separator-container {
     height: 20px;
@@ -116,6 +120,10 @@
     margin-top: 144px;
   }
   .title-separator-root-class-name10 {
+    margin-top: var(--dl-space-space-threeunits);
+    margin-bottom: var(--dl-space-space-threeunits);
+  }
+  .title-separator-root-class-name14 {
     margin-top: var(--dl-space-space-threeunits);
     margin-bottom: var(--dl-space-space-threeunits);
   }
@@ -524,7 +532,7 @@
   position: absolute;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #B6B1F0;
+  background-color: #d5e0fd;
 }
 .index-nav {
   display: flex;
@@ -539,8 +547,8 @@
   justify-content: space-between;
 }
 .index-logo {
-  width: 135px;
-  height: 32px;
+  width: 200px;
+  height: auto;
 }
 .index-close-menu {
   display: flex;
@@ -3071,6 +3079,9 @@
 .index-text161 {
   font-style: italic;
 }
+.index-link6 {
+  display: contents;
+}
 .index-component3 {
   text-decoration: none;
 }
@@ -3272,6 +3283,9 @@
     width: 32px;
     height: 32px;
   }
+  .index-logo {
+    width: 200px;
+  }
   .index-container01 {
     height: 558px;
   }
@@ -3303,7 +3317,7 @@
     height: auto;
     margin-left: 0px;
     margin-right: 0px;
-    margin-bottom: 0px;
+    margin-bottom: var(--dl-space-space-threeunits);
   }
   .index-project-image {
     box-shadow: 5px 5px 10px 0px #d4d4d4;
@@ -3313,6 +3327,7 @@
   }
   .index-container05 {
     flex: 1;
+    margin-bottom: var(--dl-space-space-threeunits);
   }
   .index-image02 {
     padding: var(--dl-space-space-halfunit);
@@ -3365,7 +3380,7 @@
     height: auto;
     margin-left: 0px;
     margin-right: 0px;
-    margin-bottom: 0px;
+    margin-bottom: var(--dl-space-space-threeunits);
   }
   .index-project-image2 {
     box-shadow: 5px 5px 10px 0px #d4d4d4;
@@ -3375,6 +3390,7 @@
   }
   .index-container25 {
     flex: 1;
+    margin-bottom: var(--dl-space-space-threeunits);
   }
   .index-image10 {
     padding: var(--dl-space-space-halfunit);
@@ -3594,6 +3610,7 @@
   }
   .index-navbar-interactive {
     padding: 0px;
+    padding-right: 0px;
   }
   .index-image {
     width: 155px;
@@ -3608,6 +3625,13 @@
   .index-icon {
     width: 32px;
     height: 32px;
+  }
+  .index-mobile-menu {
+    background-color: #d5e0fd;
+  }
+  .index-logo {
+    width: 155px;
+    height: auto;
   }
   .index-container01 {
     height: 431px;
@@ -4141,6 +4165,9 @@
     width: 32px;
     height: 32px;
   }
+  .index-logo {
+    width: 100px;
+  }
   .index-container01 {
     height: 270px;
     margin-top: 0px;
@@ -4173,9 +4200,13 @@
   .index-text002 {
     font-size: 5px;
   }
+  .index-project-box1 {
+    padding-bottom: var(--dl-space-space-twounits);
+  }
   .index-project {
     width: 400px;
     height: auto;
+    margin-bottom: var(--dl-space-space-twounits);
   }
   .index-project-image {
     height: auto;
@@ -4522,6 +4553,7 @@
   .index-project2 {
     width: 400px;
     height: auto;
+    margin-bottom: var(--dl-space-space-twounits);
   }
   .index-project-image2 {
     height: auto;
@@ -5496,6 +5528,9 @@
   .index-mobile-menu {
     padding: 16px;
   }
+  .index-logo {
+    width: 100px;
+  }
   .index-container01 {
     height: 180px;
     margin-top: 0px;
@@ -5508,6 +5543,7 @@
     width: 235px;
     height: 81px;
     padding: var(--dl-space-space-halfunit);
+    margin-top: var(--dl-space-space-twounits);
     border-radius: var(--dl-radius-radius-radius8);
   }
   .index-image01 {

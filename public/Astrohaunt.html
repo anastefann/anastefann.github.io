@@ -1,152 +1,1476 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <title>Ana Stefan</title>
-  <script src="index.js" defer></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
-  <script src="https://kit.fontawesome.com/1d2f579c60.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <nav>
-    <a href="index.html" class="navName" style="text-decoration: none;"><p>Ana Stefan - Technical Game Designer</p></a>
-    
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropbtn currentPageNav">Projects</a>
-        <div class="dropdown-content">
-          <a href="TwinStickJukeBox.html">Twin Stick Jukebox</a>
-          <a href="Astrohaunt.html">Astrohaunt</a>
-          <a href="RuckusAndRascal.html">Ruckus & Rascal</a>
-          <a href="TheLongDark.html">The Long Dark UI System</a>
-          <a href="Unrobbery.html">Unrobbery</a>
-          <a href="SilverIsland.html">Silver Island</a>
+  <head>
+    <title>Astrohaunt - Ana Stefan Portfolio</title>
+    <meta
+      name="description"
+      content="Welcome to my portfolio! My name is Ana Stefan and I am a technical game designer. Look around to see my projects and learn more about myself and what I do."
+    />
+    <meta property="og:title" content="Astrohaunt - Ana Stefan Portfolio" />
+    <meta
+      property="og:description"
+      content="Hi, welcome to my portfolio! My name is Ana Stefan and I am a technical game designer. Look around to see my projects and learn a little about myself and what I do."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./astrohaunt.css" rel="stylesheet" />
+
+      <div class="astrohaunt-container">
+        <header
+          data-role="Header"
+          class="header-header header-root-class-name1"
+        >
+          <header data-thq="thq-navbar" class="header-navbar-interactive">
+            <a href="index.html" class="header-navlink">
+              <img
+                alt="logo"
+                src="./Extras/logo2.png"
+                class="header-image"
+              />
+            </a>
+            <div data-thq="thq-navbar-nav" class="header-desktop-menu">
+              <nav class="header-links">
+                <a href="index.html" class="header-link">Home</a>
+                <a href="index.html" class="header-navlink1">Projects</a>
+                <a href="#footer" class="header-link1">Contact</a>
+                <a href="AboutMe.html" class="header-navlink2">About Me</a>
+                <a href="AboutMe.html" class="header-navlink3">Resume</a>
+              </nav>
+            </div>
+            <div data-thq="thq-burger-menu" class="header-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="header-icon">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </div>
+            <div data-thq="thq-mobile-menu" class="header-mobile-menu">
+              <div class="header-nav">
+                <div class="header-top">
+                  <img
+                    alt="image"
+                    src="./Extras/logo2.png"
+                    class="header-logo"
+                  />
+                  <div data-thq="thq-close-menu" class="header-close-menu">
+                    <svg viewBox="0 0 1024 1024" class="header-icon2">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav class="header-links1">
+                  <a href="index.html" class="header-link2">Home</a>
+                  <a href="index.html" class="header-navlink4">Projects</a>
+                  <a href="#footer" class="header-link3">Contact</a>
+                  <a href="AboutMe.html" class="header-navlink5">About Me</a>
+                  <a href="AboutMe.html" class="header-navlink6">Resume</a>
+                </nav>
+              </div>
+            </div>
+          </header>
+        </header>
+        <div class="astrohaunt-container01">
+          <video
+            src="./Projects/Astrohaunt/gameplay.mp4"
+            loop="true"
+            muted="true"
+            preload="auto"
+            autoplay="true"
+            class="astrohaunt-video"
+            id="top-image"
+          ></video>
         </div>
-      </li>
-      <li><a href="AboutMe.html">About Me</a></li>
-      <li><a href="#footer">Contact</a></li>
-      <li><a href="AboutMe.html">Resume</a></li>
-    </ul>
-  </nav>  
-
-  <section class="TSJHeader" id="section1">
-    <div class="headerContainer">
-      <div class="TSJHeaderVideo">
-      </div>
-      <div class="headerTSJ">
-        <h1>ASTROHAUNT</h1>
-        <h3>Technical Game Designer</h3>
-        <div class="TSJVideo">
-          <iframe width="1024" height="576" src="https://www.youtube.com/watch?v=pOGo_tWYhsk" title="Twin Stick Jukebox Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; vq=hd1080" allowfullscreen></iframe>
+        <div class="astrohaunt-container02">
+          <span class="astrohaunt-text">ASTROHAUNT</span>
+          <span class="astrohaunt-text01">Top Down Shooter</span>
+          <span class="astrohaunt-text02">
+            You are an astronaut trying to clear as many haunted mansions as you
+            can by shooting ghosts and taking their abilities!
+          </span>
+          <div class="astrohaunt-container03">
+            <div class="astrohaunt-container04">
+              <img
+                alt="Team Size: 13 People"
+                src="./Icons/people.svg"
+                class="astrohaunt-image"
+              />
+              <span class="astrohaunt-text03">13 People</span>
+            </div>
+            <div class="astrohaunt-container05">
+              <img
+                alt="Duration: 7 Weeks"
+                src="./Icons/time.svg"
+                class="astrohaunt-image01"
+              />
+              <span class="astrohaunt-text04">7 Weeks</span>
+            </div>
+            <div class="astrohaunt-container06">
+              <img
+                alt="Role: Technical Game Designer"
+                src="./Icons/technicalgamedesigner.svg"
+                class="astrohaunt-image02"
+              />
+              <span class="astrohaunt-text05">Technical Game Designer</span>
+            </div>
+            <div class="astrohaunt-container07">
+              <img
+                alt="Developed In Unreal Engine"
+                src="./Icons/unreal.svg"
+                class="astrohaunt-image03"
+              />
+              <span class="astrohaunt-text06">Unreal Engine</span>
+            </div>
+          </div>
+          <a
+            href="https://buas.itch.io/astrohaunt"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="astrohaunt-link button"
+          >
+            itch.io
+          </a>
+        </div>
+        <div
+          class="title-separator-main-projects-title title-separator-root-class-name2"
+        >
+          <div class="title-separator-container"></div>
+          <span class="title-separator-text">
+            <span>PROJECT OVERVIEW</span>
+          </span>
+          <div class="title-separator-container1"></div>
+        </div>
+        <div class="astrohaunt-reference-game-research">
+          <div
+            class="heading-project-pages-container heading-project-pages-root-class-name71"
+          >
+            <animate-on-reveal
+              animation="fadeIn"
+              duration="1000ms"
+              delay="0s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <span
+                data-thq-animate-on-reveal="true"
+                class="heading-project-pages-text"
+              >
+                <span>About Project</span>
+              </span>
+            </animate-on-reveal>
+            <animate-on-reveal
+              animation="fadeIn"
+              duration="1000ms"
+              delay="0s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <div
+                data-thq-animate-on-reveal="true"
+                class="heading-project-pages-container1"
+              >
+                <img
+                  alt="image"
+                  src="./Extras/underlinepages_left.svg"
+                  class="heading-project-pages-image"
+                />
+                <img
+                  alt="image"
+                  src="./Extras/underlinepages_right.svg"
+                  class="heading-project-pages-image1"
+                />
+              </div>
+            </animate-on-reveal>
+          </div>
+          <animate-on-reveal
+            animation="fadeIn"
+            duration="1000ms"
+            delay="0s"
+            direction="normal"
+            easing="ease"
+            iteration="1"
+          >
+            <span data-thq-animate-on-reveal="true" class="astrohaunt-text07">
+              This is the first multidisciplinary project that I worked in. We
+              were given a few reference games, out of which we picked
+              Paradroid, and a character and location: an astronaut in a
+              mansion. We felt that Paradroid resonated best with our theme and
+              we could take some of the features from it and adapt them to our
+              game. This team included 4 designers, 4 programmers, and 5
+              artists.
+            </span>
+          </animate-on-reveal>
+          <div
+            class="heading-project-pages-container heading-project-pages-root-class-name72"
+          >
+            <animate-on-reveal
+              animation="fadeIn"
+              duration="1000ms"
+              delay="0s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <span
+                data-thq-animate-on-reveal="true"
+                class="heading-project-pages-text"
+              >
+                <span>Challenges</span>
+              </span>
+            </animate-on-reveal>
+            <animate-on-reveal
+              animation="fadeIn"
+              duration="1000ms"
+              delay="0s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <div
+                data-thq-animate-on-reveal="true"
+                class="heading-project-pages-container1"
+              >
+                <img
+                  alt="image"
+                  src="./Extras/underlinepages_left.svg"
+                  class="heading-project-pages-image"
+                />
+                <img
+                  alt="image"
+                  src="./Extras/underlinepages_right.svg"
+                  class="heading-project-pages-image1"
+                />
+              </div>
+            </animate-on-reveal>
+          </div>
+          <animate-on-reveal
+            animation="fadeIn"
+            duration="1000ms"
+            delay="0s"
+            direction="normal"
+            easing="ease"
+            iteration="1"
+          >
+            <span data-thq-animate-on-reveal="true" class="astrohaunt-text08">
+              <span class="astrohaunt-text09">
+                First Multidisciplinary Experience
+              </span>
+              <br class="astrohaunt-text10" />
+              <span>
+                This was the first time I got to work in a team project with
+                artists and programmers, which was a little challenging at
+                first. It took me some time to open up and speak my mind in
+                meetings. It also taught me to trust my teammates as I learned
+                that we all have our own strengths and I can count on others to
+                do their work well.
+              </span>
+              <br class="astrohaunt-text12" />
+              <br class="astrohaunt-text13" />
+              <span class="astrohaunt-text14">Damage Feedback</span>
+              <br class="astrohaunt-text15" />
+              <span>
+                When we first started playtesting the game, we noticed that the
+                players wouldn't look at their health bar and would end up dying
+                a lot. To solve this, I implemented a visual damage feedback
+                system, the blood splatter vignette.
+              </span>
+              <br class="astrohaunt-text17" />
+              <br class="astrohaunt-text18" />
+              <span class="astrohaunt-text19">
+                Players Are Unaware Of Minigame
+              </span>
+              <br class="astrohaunt-text20" />
+              <span>
+                We noticed that not many players knew that they could capture
+                ghosts, but even if they did, they didn't see the point in doing
+                it more than once. They also created their own strategies and
+                found out which ability works best for them. Due to this, we
+                decided to implement a tutorial level, which was my task, where
+                the players are taught how to capture ghosts.
+              </span>
+              <br />
+            </span>
+          </animate-on-reveal>
+        </div>
+        <div
+          class="title-separator-main-projects-title title-separator-root-class-name15"
+        >
+          <div class="title-separator-container"></div>
+          <span class="title-separator-text">
+            <span>MY CONTRIBUTIONS</span>
+          </span>
+          <div class="title-separator-container1"></div>
+        </div>
+        <div class="astrohaunt-reference-game-research1">
+          <div
+            class="heading-project-pages-container heading-project-pages-root-class-name5"
+          >
+            <animate-on-reveal
+              animation="fadeIn"
+              duration="1000ms"
+              delay="0s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <span
+                data-thq-animate-on-reveal="true"
+                class="heading-project-pages-text"
+              >
+                <span>Reference Game Research</span>
+              </span>
+            </animate-on-reveal>
+            <animate-on-reveal
+              animation="fadeIn"
+              duration="1000ms"
+              delay="0s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <div
+                data-thq-animate-on-reveal="true"
+                class="heading-project-pages-container1"
+              >
+                <img
+                  alt="image"
+                  src="./Extras/underlinepages_left.svg"
+                  class="heading-project-pages-image"
+                />
+                <img
+                  alt="image"
+                  src="./Extras/underlinepages_right.svg"
+                  class="heading-project-pages-image1"
+                />
+              </div>
+            </animate-on-reveal>
+          </div>
+          <div class="astrohaunt-container08">
+            <div class="astrohaunt-container09">
+              <animate-on-reveal
+                animation="fadeIn"
+                duration="1000ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <span
+                  data-thq-animate-on-reveal="true"
+                  class="astrohaunt-text23"
+                >
+                  The design team worked on creating a research document, where
+                  my part was to create a gameplay flowchart for our reference
+                  game, Paradroid. This helped us get a better understanding of
+                  the mechanics and be able to choose elements that we wanted to
+                  take into our own game.
+                </span>
+              </animate-on-reveal>
+              <animate-on-reveal
+                animation="fadeIn"
+                duration="1000ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <img
+                  alt="Gameplay Flowchart of Reference Game, Paradroid"
+                  src="./Projects/Astrohaunt/ParadroidFlowchart.png"
+                  data-thq-animate-on-reveal="true"
+                  class="astrohaunt-image04"
+                />
+              </animate-on-reveal>
+              <animate-on-reveal
+                animation="fadeIn"
+                duration="1000ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <span
+                  data-thq-animate-on-reveal="true"
+                  class="astrohaunt-text24"
+                >
+                  <span>Gameplay Flowchart of Reference Game, Paradroid</span>
+                  <br />
+                </span>
+              </animate-on-reveal>
+            </div>
+            <animate-on-reveal
+              animation="fadeIn"
+              duration="1000ms"
+              delay="0s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <div
+                data-thq-animate-on-reveal="true"
+                class="astrohaunt-container10"
+              >
+                <div
+                  data-thq="slider"
+                  data-navigation="true"
+                  data-pagination="true"
+                  class="astrohaunt-slider swiper"
+                >
+                  <div data-thq="slider-wrapper" class="swiper-wrapper">
+                    <div
+                      data-thq="slider-slide"
+                      class="astrohaunt-slider-slide-replace swiper-slide"
+                    ></div>
+                    <div
+                      data-thq="slider-slide"
+                      class="astrohaunt-slider-slide-replace1 swiper-slide"
+                    ></div>
+                    <div
+                      data-thq="slider-slide"
+                      class="astrohaunt-slider-slide-replace2 swiper-slide"
+                    ></div>
+                    <div
+                      data-thq="slider-slide"
+                      class="astrohaunt-slider-slide-replace3 swiper-slide"
+                    ></div>
+                  </div>
+                  <div
+                    data-thq="slider-pagination"
+                    class="astrohaunt-slider-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
+                  >
+                    <div
+                      data-thq="slider-pagination-bullet"
+                      class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                    ></div>
+                    <div
+                      data-thq="slider-pagination-bullet"
+                      class="swiper-pagination-bullet"
+                    ></div>
+                    <div
+                      data-thq="slider-pagination-bullet"
+                      class="swiper-pagination-bullet"
+                    ></div>
+                    <div
+                      data-thq="slider-pagination-bullet"
+                      class="swiper-pagination-bullet"
+                    ></div>
+                  </div>
+                  <div
+                    data-thq="slider-button-prev"
+                    class="swiper-button-prev"
+                  ></div>
+                  <div
+                    data-thq="slider-button-next"
+                    class="swiper-button-next"
+                  ></div>
+                </div>
+                <span class="astrohaunt-text27">
+                  <span>Research Document</span>
+                  <br />
+                </span>
+              </div>
+            </animate-on-reveal>
+          </div>
+        </div>
+        <div class="astrohaunt-prototyping-3-cs">
+          <span class="astrohaunt-text30"></span>
+          <div class="astrohaunt-container11">
+            <div
+              class="heading-project-pages-container heading-project-pages-root-class-name65"
+            >
+              <animate-on-reveal
+                animation="fadeIn"
+                duration="1000ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <span
+                  data-thq-animate-on-reveal="true"
+                  class="heading-project-pages-text"
+                >
+                  <span>Prototyping the Character,</span>
+                </span>
+              </animate-on-reveal>
+              <animate-on-reveal
+                animation="fadeIn"
+                duration="1000ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <div
+                  data-thq-animate-on-reveal="true"
+                  class="heading-project-pages-container1"
+                >
+                  <img
+                    alt="image"
+                    src="./Extras/underlinepages_left.svg"
+                    class="heading-project-pages-image"
+                  />
+                  <img
+                    alt="image"
+                    src="./Extras/underlinepages_right.svg"
+                    class="heading-project-pages-image1"
+                  />
+                </div>
+              </animate-on-reveal>
+            </div>
+            <div
+              class="heading-project-pages-container heading-project-pages-root-class-name66"
+            >
+              <animate-on-reveal
+                animation="fadeIn"
+                duration="1000ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <span
+                  data-thq-animate-on-reveal="true"
+                  class="heading-project-pages-text"
+                >
+                  <span>Camera, and Controls</span>
+                </span>
+              </animate-on-reveal>
+              <animate-on-reveal
+                animation="fadeIn"
+                duration="1000ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <div
+                  data-thq-animate-on-reveal="true"
+                  class="heading-project-pages-container1"
+                >
+                  <img
+                    alt="image"
+                    src="./Extras/underlinepages_left.svg"
+                    class="heading-project-pages-image"
+                  />
+                  <img
+                    alt="image"
+                    src="./Extras/underlinepages_right.svg"
+                    class="heading-project-pages-image1"
+                  />
+                </div>
+              </animate-on-reveal>
+            </div>
+          </div>
+          <div class="astrohaunt-container12">
+            <animate-on-reveal
+              animation="fadeIn"
+              duration="1000ms"
+              delay="0s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <div
+                data-thq-animate-on-reveal="true"
+                class="astrohaunt-container13"
+              >
+                <div class="astrohaunt-container14">
+                  <span class="astrohaunt-text31">Character</span>
+                  <span class="astrohaunt-text32">
+                    For the character, I experimented with different types using
+                    a colleague's tool for adjusting in-game values easily. I
+                    created three versions: Floaty for the in-space feel, Quick
+                    and snappy like our reference game, and a blend of both for
+                    balance. Playtesting guided us to the final choice, which we
+                    tweaked based on player preferences.
+                  </span>
+                </div>
+                <div class="astrohaunt-container15">
+                  <img
+                    alt="Final Version"
+                    src="./Projects/Astrohaunt/movement_final.gif"
+                    class="astrohaunt-image05"
+                  />
+                  <span class="astrohaunt-text33">
+                    <span>Final Version</span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </animate-on-reveal>
+            <animate-on-reveal
+              animation="fadeIn"
+              duration="1000ms"
+              delay="0s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <div
+                data-thq-animate-on-reveal="true"
+                class="astrohaunt-container16"
+              >
+                <div class="astrohaunt-container17">
+                  <img
+                    alt="Paradroid-Like&nbsp;Movement"
+                    src="./Projects/Astrohaunt/movement_paradroid.gif"
+                    class="astrohaunt-image06"
+                  />
+                  <span class="astrohaunt-text36">
+                    <span>Paradroid-Like&nbsp;</span>
+                    <span>Movement</span>
+                    <br />
+                  </span>
+                </div>
+                <div class="astrohaunt-container18">
+                  <img
+                    alt="Floaty Movement"
+                    src="./Projects/Astrohaunt/movement_floaty.gif"
+                    class="astrohaunt-image07"
+                  />
+                  <span class="astrohaunt-text40">
+                    <span>Floaty Movement</span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </animate-on-reveal>
+            <div class="astrohaunt-container19">
+              <animate-on-reveal
+                animation="fadeIn"
+                duration="1000ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <div
+                  data-thq-animate-on-reveal="true"
+                  class="astrohaunt-container20"
+                >
+                  <span class="astrohaunt-text43">
+                    <span>Camera</span>
+                    <br />
+                  </span>
+                  <span class="astrohaunt-text46">
+                    For the camera, I ensured it provided enough information
+                    without revealing the whole map, maintaining the Ouija
+                    Board's utility for finding enemies. Adjustments were made
+                    to address visibility issues near walls, resulting in a more
+                    balanced view.
+                  </span>
+                </div>
+              </animate-on-reveal>
+              <animate-on-reveal
+                animation="fadeIn"
+                duration="1000ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <div
+                  data-thq-animate-on-reveal="true"
+                  class="astrohaunt-container21"
+                >
+                  <div class="astrohaunt-container22">
+                    <img
+                      alt="Initial Camera"
+                      src="./Projects/Astrohaunt/camera_before.png"
+                      class="astrohaunt-image08"
+                    />
+                    <span class="astrohaunt-text47">
+                      <span>Initial Camera</span>
+                      <br />
+                    </span>
+                  </div>
+                  <div class="astrohaunt-container23">
+                    <img
+                      alt="Final Camera"
+                      src="./Projects/Astrohaunt/camera_after.png"
+                      class="astrohaunt-image09"
+                    />
+                    <span class="astrohaunt-text50">
+                      <span>Final Camera</span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </animate-on-reveal>
+              <animate-on-reveal
+                animation="fadeIn"
+                duration="1000ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <div
+                  data-thq-animate-on-reveal="true"
+                  class="astrohaunt-container24"
+                >
+                  <span class="astrohaunt-text53">Controls</span>
+                  <span class="astrohaunt-text54">
+                    Regarding controls, we initially disagreed and delayed
+                    decisions, which we now see as a misstep. We eventually
+                    settled on common controls, adjusting based on playtesting.
+                    We used Unreal Engine's input system, where each input
+                    action was set in the project settings and used in
+                    blueprints through events.
+                  </span>
+                </div>
+              </animate-on-reveal>
+            </div>
+          </div>
+        </div>
+        <div class="astrohaunt-leaderboard-saving-system">
+          <div class="astrohaunt-container25">
+            <div class="astrohaunt-container26">
+              <div class="astrohaunt-container27">
+                <div
+                  class="heading-project-pages-container heading-project-pages-root-class-name9"
+                >
+                  <animate-on-reveal
+                    animation="fadeIn"
+                    duration="1000ms"
+                    delay="0s"
+                    direction="normal"
+                    easing="ease"
+                    iteration="1"
+                  >
+                    <span
+                      data-thq-animate-on-reveal="true"
+                      class="heading-project-pages-text"
+                    >
+                      <span>Leaderboard &amp; Saving System</span>
+                    </span>
+                  </animate-on-reveal>
+                  <animate-on-reveal
+                    animation="fadeIn"
+                    duration="1000ms"
+                    delay="0s"
+                    direction="normal"
+                    easing="ease"
+                    iteration="1"
+                  >
+                    <div
+                      data-thq-animate-on-reveal="true"
+                      class="heading-project-pages-container1"
+                    >
+                      <img
+                        alt="image"
+                        src="./Extras/underlinepages_left.svg"
+                        class="heading-project-pages-image"
+                      />
+                      <img
+                        alt="image"
+                        src="./Extras/underlinepages_right.svg"
+                        class="heading-project-pages-image1"
+                      />
+                    </div>
+                  </animate-on-reveal>
+                </div>
+                <animate-on-reveal
+                  animation="fadeIn"
+                  duration="1000ms"
+                  delay="0s"
+                  direction="normal"
+                  easing="ease"
+                  iteration="1"
+                >
+                  <span
+                    data-thq-animate-on-reveal="true"
+                    class="astrohaunt-text55"
+                  >
+                    The saving system served dual purposes: for the intro
+                    cutscene, played only once at the game's start, and for
+                    saving high scores. The top 10 scores, entered by players at
+                    the end of each game, were displayed in a leaderboard, which
+                    creates competition. When the high score limit was reached,
+                    the system determined whether the player's score qualified
+                    for saving (if it was higher than the lowest score) or
+                    triggered the game over screen. The implementation involved
+                    using a tutorial for the saving system itself and creating a
+                    custom keyboard layout for the high-score screen using
+                    buttons that once pressed would add a letter to an array.
+                  </span>
+                </animate-on-reveal>
+              </div>
+              <div class="astrohaunt-container28">
+                <animate-on-reveal
+                  animation="fadeIn"
+                  duration="1000ms"
+                  delay="0s"
+                  direction="normal"
+                  easing="ease"
+                  iteration="1"
+                >
+                  <img
+                    alt="High Score Screen In-Game"
+                    src="./Projects/Astrohaunt/leaderboard.gif"
+                    data-thq-animate-on-reveal="true"
+                    class="astrohaunt-image10"
+                  />
+                </animate-on-reveal>
+                <animate-on-reveal
+                  animation="fadeIn"
+                  duration="1000ms"
+                  delay="0s"
+                  direction="normal"
+                  easing="ease"
+                  iteration="1"
+                >
+                  <span
+                    data-thq-animate-on-reveal="true"
+                    class="astrohaunt-text56"
+                  >
+                    High Score Screen In-Game
+                  </span>
+                </animate-on-reveal>
+              </div>
+            </div>
+            <animate-on-reveal
+              animation="fadeIn"
+              duration="1000ms"
+              delay="0s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <div
+                data-thq-animate-on-reveal="true"
+                class="astrohaunt-blueprint"
+              >
+                <div class="astrohaunt-container29">
+                  <div class="astrohaunt-container30"></div>
+                  <iframe
+                    src="https://blueprintue.com/render/zbpqt5f7/"
+                    zoom="90%"
+                    scrolling="no"
+                    allowfullscreen=""
+                    class="astrohaunt-iframe"
+                  ></iframe>
+                  <span class="astrohaunt-text57">
+                    High Score Screen Blueprint
+                  </span>
+                </div>
+              </div>
+            </animate-on-reveal>
+          </div>
+        </div>
+        <div class="astrohaunt-blood-splatter-system">
+          <div class="astrohaunt-container31">
+            <div class="astrohaunt-container32">
+              <div class="astrohaunt-container33">
+                <div
+                  class="heading-project-pages-container heading-project-pages-root-class-name8"
+                >
+                  <animate-on-reveal
+                    animation="fadeIn"
+                    duration="1000ms"
+                    delay="0s"
+                    direction="normal"
+                    easing="ease"
+                    iteration="1"
+                  >
+                    <span
+                      data-thq-animate-on-reveal="true"
+                      class="heading-project-pages-text"
+                    >
+                      <span>Blood Splatter System</span>
+                    </span>
+                  </animate-on-reveal>
+                  <animate-on-reveal
+                    animation="fadeIn"
+                    duration="1000ms"
+                    delay="0s"
+                    direction="normal"
+                    easing="ease"
+                    iteration="1"
+                  >
+                    <div
+                      data-thq-animate-on-reveal="true"
+                      class="heading-project-pages-container1"
+                    >
+                      <img
+                        alt="image"
+                        src="./Extras/underlinepages_left.svg"
+                        class="heading-project-pages-image"
+                      />
+                      <img
+                        alt="image"
+                        src="./Extras/underlinepages_right.svg"
+                        class="heading-project-pages-image1"
+                      />
+                    </div>
+                  </animate-on-reveal>
+                </div>
+                <animate-on-reveal
+                  animation="fadeIn"
+                  duration="1000ms"
+                  delay="0s"
+                  direction="normal"
+                  easing="ease"
+                  iteration="1"
+                >
+                  <span
+                    data-thq-animate-on-reveal="true"
+                    class="astrohaunt-text58"
+                  >
+                    This system's purpose is to show the player when they are
+                    taking damage, becoming progressively bloodier the lower
+                    their health is. I implemented this because the players did
+                    not understand how much damage they were taking and could
+                    not always look at their health bar while playing the game.
+                    I created 4 animations for each quarter of the player's
+                    health and displayed them on top of the HUD accordingly.
+                  </span>
+                </animate-on-reveal>
+              </div>
+              <div class="astrohaunt-container34">
+                <animate-on-reveal
+                  animation="fadeIn"
+                  duration="1000ms"
+                  delay="0s"
+                  direction="normal"
+                  easing="ease"
+                  iteration="1"
+                >
+                  <img
+                    alt="Blood Splatter In-Game"
+                    src="./Projects/Astrohaunt/bloodsplatter.gif"
+                    data-thq-animate-on-reveal="true"
+                    class="astrohaunt-image11"
+                  />
+                </animate-on-reveal>
+                <animate-on-reveal
+                  animation="fadeIn"
+                  duration="1000ms"
+                  delay="0s"
+                  direction="normal"
+                  easing="ease"
+                  iteration="1"
+                >
+                  <span
+                    data-thq-animate-on-reveal="true"
+                    class="astrohaunt-text59"
+                  >
+                    Blood Splatter In-Game
+                  </span>
+                </animate-on-reveal>
+              </div>
+            </div>
+          </div>
+          <animate-on-reveal
+            animation="fadeIn"
+            duration="1000ms"
+            delay="0s"
+            direction="normal"
+            easing="ease"
+            iteration="1"
+          >
+            <div
+              data-thq-animate-on-reveal="true"
+              class="astrohaunt-container35"
+            >
+              <div class="astrohaunt-container36"></div>
+              <iframe
+                src="https://blueprintue.com/render/tv0t5z-p/"
+                zoom="90%"
+                scrolling="no"
+                allowfullscreen=""
+                class="astrohaunt-iframe1"
+              ></iframe>
+              <span class="astrohaunt-text60">Blood Splatter Blueprint</span>
+            </div>
+          </animate-on-reveal>
+        </div>
+        <div class="astrohaunt-tutorial-level">
+          <div class="astrohaunt-container37">
+            <div class="astrohaunt-container38">
+              <div class="astrohaunt-container39">
+                <div
+                  class="heading-project-pages-container heading-project-pages-root-class-name63"
+                >
+                  <animate-on-reveal
+                    animation="fadeIn"
+                    duration="1000ms"
+                    delay="0s"
+                    direction="normal"
+                    easing="ease"
+                    iteration="1"
+                  >
+                    <span
+                      data-thq-animate-on-reveal="true"
+                      class="heading-project-pages-text"
+                    >
+                      <span>Onboarding &amp; Tutorial</span>
+                    </span>
+                  </animate-on-reveal>
+                  <animate-on-reveal
+                    animation="fadeIn"
+                    duration="1000ms"
+                    delay="0s"
+                    direction="normal"
+                    easing="ease"
+                    iteration="1"
+                  >
+                    <div
+                      data-thq-animate-on-reveal="true"
+                      class="heading-project-pages-container1"
+                    >
+                      <img
+                        alt="image"
+                        src="./Extras/underlinepages_left.svg"
+                        class="heading-project-pages-image"
+                      />
+                      <img
+                        alt="image"
+                        src="./Extras/underlinepages_right.svg"
+                        class="heading-project-pages-image1"
+                      />
+                    </div>
+                  </animate-on-reveal>
+                </div>
+                <div
+                  class="heading-project-pages-container heading-project-pages-root-class-name64"
+                >
+                  <animate-on-reveal
+                    animation="fadeIn"
+                    duration="1000ms"
+                    delay="0s"
+                    direction="normal"
+                    easing="ease"
+                    iteration="1"
+                  >
+                    <span
+                      data-thq-animate-on-reveal="true"
+                      class="heading-project-pages-text"
+                    >
+                      <span>Level Workflow</span>
+                    </span>
+                  </animate-on-reveal>
+                  <animate-on-reveal
+                    animation="fadeIn"
+                    duration="1000ms"
+                    delay="0s"
+                    direction="normal"
+                    easing="ease"
+                    iteration="1"
+                  >
+                    <div
+                      data-thq-animate-on-reveal="true"
+                      class="heading-project-pages-container1"
+                    >
+                      <img
+                        alt="image"
+                        src="./Extras/underlinepages_left.svg"
+                        class="heading-project-pages-image"
+                      />
+                      <img
+                        alt="image"
+                        src="./Extras/underlinepages_right.svg"
+                        class="heading-project-pages-image1"
+                      />
+                    </div>
+                  </animate-on-reveal>
+                </div>
+              </div>
+              <animate-on-reveal
+                animation="fadeIn"
+                duration="1000ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <span
+                  data-thq-animate-on-reveal="true"
+                  class="astrohaunt-text61"
+                >
+                  I was tasked with creating the tutorial level for which I
+                  created a one-pager to start with. This explains my approach
+                  to onboarding the elements and the reasoning behind it, which
+                  involves gradually introducing mechanics, concluding with
+                  possessing and mini-game explanations.
+                </span>
+              </animate-on-reveal>
+              <animate-on-reveal
+                animation="fadeIn"
+                duration="1000ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <img
+                  alt="Tutorial Level One Pager"
+                  src="./Projects/Astrohaunt/tutorial_onepager.png"
+                  data-thq-animate-on-reveal="true"
+                  class="astrohaunt-image12"
+                />
+              </animate-on-reveal>
+              <animate-on-reveal
+                animation="fadeIn"
+                duration="1000ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <span
+                  data-thq-animate-on-reveal="true"
+                  class="astrohaunt-text62"
+                >
+                  Tutorial Level One Pager
+                </span>
+              </animate-on-reveal>
+              <animate-on-reveal
+                animation="fadeIn"
+                duration="1000ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <span
+                  data-thq-animate-on-reveal="true"
+                  class="astrohaunt-text63"
+                >
+                  Besides creating the level itself, I worked with programmers
+                  for setting up the enemy AI, and with artists for set-dressing
+                  and adding the instructional cards throughout the level. I
+                  used animations for popping the cards in and out. The level
+                  layout has changed multiple times based on my peers' and
+                  playtesters' feedback, aiming to provide clearer explanations.
+                </span>
+              </animate-on-reveal>
+              <animate-on-reveal
+                animation="fadeIn"
+                duration="1000ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <video
+                  src="./Projects/Astrohaunt/tutorial_showcase.mp4"
+                  loop="true"
+                  muted="true"
+                  preload="auto"
+                  autoplay="true"
+                  controls="true"
+                  data-thq-animate-on-reveal="true"
+                  class="astrohaunt-video1"
+                ></video>
+              </animate-on-reveal>
+              <animate-on-reveal
+                animation="fadeIn"
+                duration="1000ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <span
+                  data-thq-animate-on-reveal="true"
+                  class="astrohaunt-text64"
+                >
+                  Tutorial Level Showcase
+                </span>
+              </animate-on-reveal>
+            </div>
+          </div>
+        </div>
+        <div class="astrohaunt-ui">
+          <div
+            class="heading-project-pages-container heading-project-pages-root-class-name7"
+          >
+            <animate-on-reveal
+              animation="fadeIn"
+              duration="1000ms"
+              delay="0s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <span
+                data-thq-animate-on-reveal="true"
+                class="heading-project-pages-text"
+              >
+                <span>Developed UI Menus &amp; HUD</span>
+              </span>
+            </animate-on-reveal>
+            <animate-on-reveal
+              animation="fadeIn"
+              duration="1000ms"
+              delay="0s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <div
+                data-thq-animate-on-reveal="true"
+                class="heading-project-pages-container1"
+              >
+                <img
+                  alt="image"
+                  src="./Extras/underlinepages_left.svg"
+                  class="heading-project-pages-image"
+                />
+                <img
+                  alt="image"
+                  src="./Extras/underlinepages_right.svg"
+                  class="heading-project-pages-image1"
+                />
+              </div>
+            </animate-on-reveal>
+          </div>
+          <div class="astrohaunt-container40">
+            <animate-on-reveal
+              animation="fadeIn"
+              duration="1000ms"
+              delay="0s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <span data-thq-animate-on-reveal="true" class="astrohaunt-text65">
+                Using UMG (Unreal Motion Graphics), I developed many UI screens
+                within the game, ranging from the main menu, the HUD, the
+                leaderboard, and more. Back then, I had no experience with UI
+                and used to align elements using anchors, which I now know is
+                not a good idea. The layout was also not great and I think we
+                could have made certain elements look better, like the health
+                bar.
+              </span>
+            </animate-on-reveal>
+          </div>
+        </div>
+        <div class="astrohaunt-achievements">
+          <div
+            class="heading-project-pages-container heading-project-pages-root-class-name6"
+          >
+            <animate-on-reveal
+              animation="fadeIn"
+              duration="1000ms"
+              delay="0s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <span
+                data-thq-animate-on-reveal="true"
+                class="heading-project-pages-text"
+              >
+                <span>Achievements</span>
+              </span>
+            </animate-on-reveal>
+            <animate-on-reveal
+              animation="fadeIn"
+              duration="1000ms"
+              delay="0s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <div
+                data-thq-animate-on-reveal="true"
+                class="heading-project-pages-container1"
+              >
+                <img
+                  alt="image"
+                  src="./Extras/underlinepages_left.svg"
+                  class="heading-project-pages-image"
+                />
+                <img
+                  alt="image"
+                  src="./Extras/underlinepages_right.svg"
+                  class="heading-project-pages-image1"
+                />
+              </div>
+            </animate-on-reveal>
+          </div>
+          <div class="astrohaunt-container41">
+            <animate-on-reveal
+              animation="fadeIn"
+              duration="1000ms"
+              delay="0s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <span data-thq-animate-on-reveal="true" class="astrohaunt-text66">
+                <span>
+                  I played an important role in developing many game elements,
+                  from adjusting the character and camera based on playtesting
+                  feedback to creating a tutorial level and onboarding the
+                  player. I implemented a dynamic leaderboard and saving system
+                  that enhanced competition between players, and I created the
+                  blood splatter system that provided the visual damage
+                  response. Lastly, I developed UI menus and HUD elements using
+                  UMG, which contributed to the game's visual display of
+                  information.
+                </span>
+                <br />
+                <span>
+                  Being my first multidisciplinary project, I started out shy
+                  and reserved, but quickly adapted to being open about
+                  collaborating with the other roles.
+                </span>
+              </span>
+            </animate-on-reveal>
+          </div>
+        </div>
+        <a href="#top-image">
+          <div class="back-to-top-container back-to-top-root-class-name2">
+            <button type="button" class="back-to-top-button button">
+              <span>Back To Top</span>
+            </button>
+          </div>
+        </a>
+        <div id="footer" class="footer-footer footer-root-class-name7">
+          <span class="footer-text"><span>Get in touch!</span></span>
+          <span class="footer-text01">
+            <span>Found something interesting? Send</span>
+            <br />
+            <span>me a message and let's talk about it!</span>
+          </span>
+          <div class="footer-container">
+            <a
+              href="https://www.linkedin.com/in/ana-stefan-a4b648250/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="footer-link button"
+            >
+              <span>
+                <span>linkedin</span>
+                <br />
+              </span>
+            </a>
+            <a
+              href="mailto:stefananacatalina@gmail.com?subject=Interest In Portfolio"
+              class="footer-link1 button"
+            >
+              <span>
+                <span>email</span>
+                <br />
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    </section>
-
-    <div class="divider">
-      <span class="dividerText">
-        GENERAL GAME INFORMATION
-      </span>
-    </div>
-
-    <section class="TSJInformation">
-
-      <p>Get ready to blast off for a spookily extraterrestrial experience! An overly ambitious scientist’s experiment has gone horrifically wrong, and his mansion has been transported into space. It is your duty to rid the mansion of a horde of restless ghosts. Take over the different ghost’s powers to benefit you in your traversal through the scientist's mansion: Boost your health, increase your shot number, and gain new powers by trapping the ghosts in a fast-paced and immersive minigame! Clear as many floors of the mansion of ghosts as possible and de-haunt the cosmos! See you in space, Astronaut!</p>
-      <ul>
-        <li>Genre: Top Down Shooter</li>
-        <li>Unreal Engine 5</li>
-        <li>Team Size: Team Project, 13 People</li>
-        <li>Duration: 7 weeks</li>
-        <li>Platform: PC</li>
-      </ul>
-
-    </section>
-
-    <div class="divider">
-      <span class="dividerText">
-        MY RESPONSIBILITIES
-      </span>
-    </div>
-
-    <section class="TSJTopContainer">
-      <div class="TSJContent">
-        <h2>Developed a Saving System for High Scores & Leaderboard</h2>
-        <p>The saving system served dual purposes: for the intro cutscene, played only once at the game's start, and for saving high scores. The top 10 scores, entered by players at the end of each game, were displayed in a leaderboard, which creates competition. The implementation involved using a tutorial for the saving system itself and creating a custom keyboard layout for the high score screen using buttons that once pressed would add a letter to an array. When the high score limit was reached, the system determined whether the player's score qualified for saving (if it was higher than the lowest score) or triggered the game over screen.</p>
-        <h2>Developed the Top-Down Camera</h2>
-        <p>For the camera, we looked at multiple options including fully top-down, isometric, and tilted top-down, which is the option we went for. I developed the camera around game feel and player feedback. We wanted it to display enough information to the player while not having it fully zoomed out. This is so that they would not get to see where the enemies are at all times, but would rather have to go look for them using items like the Ouija Board. Implementation consisted of attaching a spring arm to the player and adjusting values until we were happy with it.</p>
-      </div>
-    
-      <div class="TSJOverview">
-        <img src="./images/highscorescreen.png" class="TSJOverview">
-      </div>
-
-    </section>
-
-    <section class="TSJTopContainer">
-      <div class="TSJContent">
-        <h2>Developed the Astronaut Character</h2>
-        <p>For the character, I created multiple versions of how walking would feel, ranging from regular to floaty movement. After testing with players, I realized that the floaty movement makes it harder to control the character, resulting in frustrating situations, so I went with a regular feel of walking. Implementation was done by using Unreal's base character blueprint, followed by adjusting a lot of variables in the character movement component, so that I would reach the desired feel.</p>
-        <h2>Developed the Controls</h2>
-        <p>The interesting part here is that I implemented controller support for player input alongside one other designer. We researched what the popular controls are for games like ours for both keyboard and controller. Once we reached a consensus, we made use of the old Unreal input, where each input action was set in the project settings and used in blueprints through events.</p>
-      </div>
-    
-      <div class="TSJOverview">
-        <img src="./images/bloodyvignette.png" class="TSJOverview">
-      </div>
-
-    </section>
-
-    <section class="TSJTopContainer">
-      <div class="TSJContent">
-        <h2>Developed UI Menus & HUD</h2>
-        <p>Using Unreal Motion Graphics (UMG), I developed many UI screens within the game, ranging from the main menu, the HUD, the leaderboard, and more. One feature I am specifically proud of was the implementation of a damage response through a vignette. This is because the players did not understand how much damage they were taking and could not always look at their health bar while playing the game. So, when the player gets hurt, a bloody vignette will appear for a short amount of time as a feedback response and gets progressively bloodier the less health the player has. Additionally, implementing controller support for all menus was a significant accomplishment for me at the time.
-          <br/><br/>
-          Here is all the UI I worked on: Player HUD, Pause Menu, Main Menu, Options Menu, Credits Menu, Intro Cutscene, Leaderboard & High Score Screens, Instructional Pop-Ups (For Tutorial)</p>
-      </div>
-    
-      <div class="TSJOverview">
-        <img src="./images/tutorialscreenshot.png" class="TSJOverview">
-      </div>
-
-    </section>
-
-    <section class="TSJBottomContainer">
-
-      <div class="TSJLeftovers">
-        <h2>Developed a Tutorial Level</h2>
-        <p>Towards the end of the project, I was asked to take on the task of creating the tutorial level. I started by defining the goal of this level: introducing all the mechanics in a logical order for the player. I laid the level out through sketching, blocked it out using basic shapes in Unreal, then iterated on it multiple times based on feedback from the team and playtesters. And once that was done, I had artists set dress it, while I worked on implementing short animations that explained the game mechanics. The goal was to give the player a visual explanation of the feature before they encountered it. I used UMG animations for popping in and out the instructional cards.</p>
-      </div>
-      
-      <div class="TSJLeftovers">
-        <h2>Kept up with a few Producer Tasks</h2>
-        <ul>
-          <li>Created and Updated Risk Log</li>
-          <li>Created Helpers for my Team (examples for Scrum Rituals)</li>
-          <li>Created Templates (personal burndown chart)</li>
-          <li>Explained Scrum Concepts to artists and programmers</li>
-          <li>Kept Track of the Miro Board (where we had the backlog with all our tasks)</li>
-          <li>Created notes during Scrum Rituals</li>
-        </ul>
-      </div>
-      
-      <div class="TSJLeftovers">
-        <h2>Achievements</h2>
-        <p>I actively sought out new challenges by contributing to UI and tutorial tasks, showcasing effective task management. Stepping out of my comfort zone, I improved communication skills within multidisciplinary teams, noted in positive peer reviews. Managing stress during project-end pressure, collaboration and support from artists played a crucial role in revamping the instructional cards for the tutorial level. Engaging in the production side was challenging but enjoyable, with the acquired knowledge anticipated to benefit future projects. The project highlighted the importance of team trust and collaboration, creating a more relaxed working environment through shared initiative and responsibility.</p>
-      </div>
-
-  </section>
-
-  <div class="footer" id="footer">
-    <h2>Get in touch!</h2>
-    <p>Found something interesting? <br/>Send me a message and let's talk about it!</p>
-    <a href="https://www.linkedin.com/in/ana-stefan-a4b648250/" target="_blank"><img src="./images/linkedin.png" alt="LinkedIn" width="60px;"></a>
-    <a href=mailto:"stefananacatalina@gmail.com" target="_blank"><img src="./images/email.png" alt="Email" width="60px;"></a>
-  </div>
-
-  <script src="index.js" defer></script>
-  
-</body>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js"
+    ></script>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
 </html>
